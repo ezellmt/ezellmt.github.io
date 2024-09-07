@@ -1,1 +1,193 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Content Analyzer - Chrome Extension</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #4CAF50;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+        .testimonials {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .testimonial p {
+            font-style: italic;
+            font-size: 18px;
+        }
+        .testimonial .author {
+            font-weight: bold;
+        }
+        .pricing {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .pricing-plan {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 40px;
+            width: 300px;
+        }
+        .pricing-plan h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .pricing-plan .price {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .pricing-plan ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .pricing-plan li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">YouTube Content Analyzer</div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Protect Your Children Online</h1>
+            <p>Analyze and filter YouTube content with our powerful Chrome Extension</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"This extension has given me peace of mind knowing my kids are safe on YouTube. Highly recommended!"</p>
+                <p class="author">- Sarah M., Parent</p>
+            </div>
+            <div class="testimonial">
+                <p>"Easy to use and effective. It's become an essential tool for our family's online safety."</p>
+                <p class="author">- John D., Father of two</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-table">
+                <div class="pricing-plan">
+                    <h3>Basic</h3>
+                    <div class="price">$4.99/month</div>
+                    <ul>
+                        <li>Content Analysis</li>
+                        <li>Age-based Filtering</li>
+                        <li>1 User Account</li>
+                    </ul>
+                    <a href="#" class="cta-button">Select Plan</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Family</h3>
+                    <div class="price">$9.99/month</div>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>Up to 5 User Accounts</li>
+                        <li>Advanced Reporting</li>
+                    </ul>
+                    <a href="#" class="cta-button">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 YouTube Content Analyzer. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
