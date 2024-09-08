@@ -14,7 +14,7 @@
 
 .carousel {
     display: flex;
-    animation: scroll 40s linear infinite;
+    animation: scroll 80s linear infinite; /* Slowed down from 40s to 80s */
 }
 
 .testimonial {
@@ -36,15 +36,15 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Changed from wrap to nowrap */
     margin-top: 40px;
 }
 
 .pricing-plan {
     background-color: #f8f9fa;
     border-radius: 5px;
-    padding: 40px;
-    width: 250px;
+    padding: 20px; /* Reduced padding */
+    width: 220px; /* Reduced width */
     position: relative;
 }
 
