@@ -19,8 +19,8 @@
 
 .cta-button {
     display: inline-block;
-    background-color: #FF0000;
-    color: white;
+    background-color: #FF0000; /* Changed to red */
+    color: white; /* Changed to white for better contrast */
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 25px;
@@ -29,15 +29,16 @@
 }
 
 .cta-button:hover {
-    background-color: white;
-    color: #FF0000;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    background-color: #CC0000; /* Darker red on hover */
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+    transform: translateY(-3px); /* Added slight lift effect */
 }
 
 .testimonials {
     overflow: hidden;
     position: relative;
-    padding: 60px 0; /* Reduced padding */
+    padding: 60px 0 30px; /* Reduced bottom padding */
 }
 
 .carousel {
@@ -61,7 +62,7 @@
 }
 
 .pricing {
-    padding: 80px 0;
+    padding: 30px 0 80px; /* Reduced top padding */
     background-color: #f8f9fa;
 }
 
