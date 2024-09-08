@@ -7,6 +7,23 @@
     padding: 100px 0;
 }
 
+.cta-button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: #FF0000;
+}
+
 .testimonials {
     overflow: hidden;
     position: relative;
@@ -35,17 +52,19 @@
 .pricing-table {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap; /* Changed from wrap to nowrap */
+    gap: 10px; /* Reduced gap */
+    flex-wrap: nowrap;
     margin-top: 40px;
 }
 
 .pricing-plan {
     background-color: #f8f9fa;
     border-radius: 5px;
-    padding: 20px; /* Reduced padding */
-    width: 220px; /* Reduced width */
+    padding: 15px; /* Further reduced padding */
+    width: 22%; /* Set width to 22% for even distribution */
+    min-width: 200px; /* Ensure minimum width for readability */
     position: relative;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .popular, .best-value {
