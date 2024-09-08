@@ -13,15 +13,16 @@
     color: white;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     font-weight: bold;
     border: 2px solid white;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: white;
     color: #FF0000;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
 .testimonials {
@@ -49,36 +50,87 @@
     }
 }
 
+.pricing {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
 .pricing-table {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Reduced gap */
+    gap: 20px;
     flex-wrap: nowrap;
     margin-top: 40px;
 }
 
 .pricing-plan {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    padding: 15px; /* Further reduced padding */
-    width: 22%; /* Set width to 22% for even distribution */
-    min-width: 200px; /* Ensure minimum width for readability */
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 23%;
+    min-width: 220px;
     position: relative;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pricing-plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-plan .price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FF0000;
+}
+
+.pricing-plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-plan li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.pricing-plan .cta-button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.pricing-plan .cta-button:hover {
+    background-color: #CC0000;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
 }
 
 .popular, .best-value {
-    border: 2px solid #4CAF50;
+    border: 2px solid #FF0000;
 }
 
 .popular-tag, .best-value-tag {
     position: absolute;
-    top: 10px;
+    top: -10px;
     right: 10px;
-    background-color: #4CAF50;
+    background-color: #FF0000;
     color: white;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 15px;
     font-size: 12px;
     font-weight: bold;
 }
@@ -88,5 +140,21 @@
 }
 
 .best-value-tag {
-    background-color: #4CAF50;
+    background-color: #FF0000;
+}
+
+@media (max-width: 1024px) {
+    .pricing-table {
+        flex-wrap: wrap;
+    }
+    .pricing-plan {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-plan {
+        width: 100%;
+    }
 }
