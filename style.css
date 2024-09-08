@@ -4,18 +4,27 @@
     background: linear-gradient(135deg, #FF0000, #000000);
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 60px 0; /* Reduced padding */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: transparent;
+    background-color: #FF0000;
     color: white;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid white;
     transition: all 0.3s ease;
 }
 
@@ -28,6 +37,7 @@
 .testimonials {
     overflow: hidden;
     position: relative;
+    padding: 60px 0; /* Reduced padding */
 }
 
 .carousel {
@@ -52,28 +62,34 @@
 
 .pricing {
     padding: 80px 0;
-    text-align: center;
     background-color: #f8f9fa;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #333;
 }
 
 .pricing-table {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap;
-    margin-top: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .pricing-plan {
     background-color: white;
     border-radius: 10px;
-    padding: 30px;
-    width: 23%;
-    min-width: 220px;
-    position: relative;
-    box-sizing: border-box;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: calc(25% - 30px);
+    min-width: 250px;
+    text-align: center;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .pricing-plan:hover {
@@ -88,10 +104,15 @@
 }
 
 .pricing-plan .price {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #FF0000;
+}
+
+.pricing-plan .price span {
+    font-size: 18px;
+    color: #666;
 }
 
 .pricing-plan ul {
@@ -109,9 +130,12 @@
     background-color: #FF0000;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 25px;
     transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .pricing-plan .cta-button:hover {
@@ -125,31 +149,23 @@
 
 .popular-tag, .best-value-tag {
     position: absolute;
-    top: -10px;
-    right: 10px;
+    top: 20px;
+    right: -35px;
     background-color: #FF0000;
     color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 12px;
+    padding: 5px 40px;
+    font-size: 14px;
     font-weight: bold;
+    transform: rotate(45deg);
 }
 
 .popular-tag {
     background-color: #FFA500;
 }
 
-.best-value-tag {
-    background-color: #FF0000;
-}
-
 @media (max-width: 1024px) {
-    .pricing-table {
-        flex-wrap: wrap;
-    }
     .pricing-plan {
-        width: 45%;
-        margin-bottom: 20px;
+        width: calc(50% - 30px);
     }
 }
 
@@ -157,4 +173,12 @@
     .pricing-plan {
         width: 100%;
     }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
