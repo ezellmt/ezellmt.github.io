@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Content Analyzer - Chrome Extension</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -145,13 +147,16 @@
     <section id="testimonials" class="testimonials">
         <div class="container">
             <h2>What Our Users Say</h2>
-            <div class="testimonial">
-                <p>"This extension has given me peace of mind knowing my kids are safe on YouTube. Highly recommended!"</p>
-                <p class="author">- Sarah M., Parent</p>
-            </div>
-            <div class="testimonial">
-                <p>"Easy to use and effective. It's become an essential tool for our family's online safety."</p>
-                <p class="author">- John D., Father of two</p>
+            <div class="carousel">
+                <div class="testimonial">
+                    <p>"This extension has given me peace of mind knowing my kids are safe on YouTube. Highly recommended!"</p>
+                    <p class="author">- Sarah M., Parent</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Easy to use and effective. It's become an essential tool for our family's online safety."</p>
+                    <p class="author">- John D., Father of two</p>
+                </div>
+                <!-- Add more testimonials here -->
             </div>
         </div>
     </section>
@@ -161,8 +166,8 @@
             <h2>Choose Your Plan</h2>
             <div class="pricing-table">
                 <div class="pricing-plan">
-                    <h3>Basic</h3>
-                    <div class="price">$4.99/month</div>
+                    <h3>Weekly</h3>
+                    <div class="price">$3/week</div>
                     <ul>
                         <li>Content Analysis</li>
                         <li>Age-based Filtering</li>
@@ -170,13 +175,35 @@
                     </ul>
                     <a href="#" class="cta-button">Select Plan</a>
                 </div>
-                <div class="pricing-plan">
-                    <h3>Family</h3>
-                    <div class="price">$9.99/month</div>
+                <div class="pricing-plan popular">
+                    <div class="popular-tag">Most Popular</div>
+                    <h3>Monthly</h3>
+                    <div class="price">$10/month</div>
                     <ul>
-                        <li>All Basic Features</li>
-                        <li>Up to 5 User Accounts</li>
+                        <li>All Weekly Features</li>
+                        <li>Up to 2 User Accounts</li>
+                        <li>Basic Reporting</li>
+                    </ul>
+                    <a href="#" class="cta-button">Select Plan</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Quarterly</h3>
+                    <div class="price">$20/quarter</div>
+                    <ul>
+                        <li>All Monthly Features</li>
+                        <li>Up to 3 User Accounts</li>
                         <li>Advanced Reporting</li>
+                    </ul>
+                    <a href="#" class="cta-button">Select Plan</a>
+                </div>
+                <div class="pricing-plan best-value">
+                    <div class="best-value-tag">Best Value</div>
+                    <h3>Annually</h3>
+                    <div class="price">$40/year</div>
+                    <ul>
+                        <li>All Quarterly Features</li>
+                        <li>Up to 5 User Accounts</li>
+                        <li>Premium Support</li>
                     </ul>
                     <a href="#" class="cta-button">Select Plan</a>
                 </div>
